@@ -1,0 +1,52 @@
+$background:#ffe6e6;
+$bg-size:cover;
+$h-font:serif;
+$border:none none double none;
+$f-size: 20px;
+$brand-font:cursive;
+$b-size:25px;
+$mb:5%;
+$f-border:double none none none;  
+$f-height: 90px;
+$text:center;
+$h1:red;
+$t-border: 1px solid black;
+$f-background: #f2f2f2;
+$t-align: right;
+
+body{  
+    background-size: $bg-size;
+    background-color: $background;
+}
+header{ 
+    font-family: $h-font;    
+    border-style: $border;
+    font-size: $f-size;
+}
+.navbar-brand{
+    font-family:$brand-font;
+    font-size: $b-size;
+}
+nav{ 
+    li :hover {
+    background-color:$background;
+    }
+}
+main{
+   margin-bottom: $mb;  
+}
+.form-control{
+    background-color: $f-background;
+    border: $t-border;
+}
+#div{
+    text-align: $t-align;
+}
+h1{
+    color: $h1
+}
+footer{
+    text-align: $text; 
+    height: $f-height;
+   border-style: $f-border;      
+}

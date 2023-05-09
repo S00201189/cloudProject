@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shop</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Products">
+    <meta name="Aurthor" content="Bashar ALHatmi">
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="Home.html"><img src="images/logo.jpg" alt="logo" width="70" height="70"></a>
+            <a class="navbar-brand" href="aboutUs.html">Re:Zero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown active">
+                        <a class="nav-link dropdown-toggle" id="navbarShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shop<span class="sr-only">(current)</span>
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="shop.html">Cloths</a>
+                            <a class="dropdown-item" href="#">Shoses</a>
+                            <a class="dropdown-item" href="#">Accessories</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" id="logout" href="#">
+                        Login </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" id="dropdownMenuReference" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent"><i class="fa fa-user"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" id="updateaccount" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="update.html">User Details</a>
+                    </div>
+                </div>
+
+                <div class="btn-toolbar">
+                    <a class="nav-item nav-link" href="checkOut.html">
+                        <button type="button" class="btn btn-secondary ml-2">Checkout <i class="fa fa-shopping-cart"></i>
+                            <span class="badge badge-light" id="checkout"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <h1> Re:Zero Shop</h1>
+
+        <div class="row">
+        </div>
+    </main>
+    <footer>
+        <p>Copyright Re:Zero © 2020</p>
+        <div class="template-demo">
+            <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
+            <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>
+            <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button>
+            <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button>
+        </div>
+    </footer>
+    <script src="bootstap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstap/js/bootstrap.bundle.min.js"></script>
+    <script src="custom.js"></script>
+</body>
+
+</html>

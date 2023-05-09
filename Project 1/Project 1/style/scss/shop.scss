@@ -1,0 +1,87 @@
+$background:#ffe6e6;
+$bg-size:cover;
+$h-font:serif;
+$border:none none double none;
+$f-size: 20px;
+$brand-font:cursive;
+$b-size:25px;
+$mb:5%;
+$w:100%;
+$f-border:double none none none;  
+$f-height: 90px;
+$text:center;
+$m2:2%;
+$m3:3%;
+$clear: both;
+$r-display: table;
+$content: "";
+$c-float: left;
+$padd: 1%; 
+$r-margin: 0.5%;
+$one-col: block; 
+$inline:inline-block;
+$l-col:98%;
+$m-col:49%;
+$s-col:33%;
+body{  
+    background-size: $bg-size;
+    background-color: $background;
+}
+header{ 
+    font-family: $h-font;    
+    border-style: $border;
+    font-size: $f-size;
+}
+.navbar-brand{
+    font-family:$brand-font;
+    font-size: $b-size;
+}
+nav {
+    li :hover {
+    background-color:$background;
+    }
+}
+main{
+   margin-bottom: $mb;  
+}
+h1{
+    text-align: $text;
+    margin-top: $m2;
+    margin-bottom: $m3;
+}
+.column {
+  float: $c-float;
+  padding: $padd;   
+}
+.row:after {
+  content: $content;
+  display: $r-display;
+  clear: $clear;   
+}
+footer{
+    text-align: $text; 
+    height: $f-height;
+   border-style: $f-border;      
+}
+@media only screen and (max-width: 320px)  {
+ .column{
+      width: $l-col;
+    display: $one-col;       
+  }    
+}
+@media only screen and (min-width: 320px) {
+ .column{
+      display:$inline;
+      width: $m-col;   
+  }  
+   .row{
+    margin-left: $r-margin;
+    margin-right: $r-margin;
+    }
+}
+@media only screen and (min-width: 720px){
+ .column{
+    width: $s-col;
+    display:$inline;    
+     }
+}

@@ -1,0 +1,133 @@
+$background:#ffe6e6;
+$h-font:serif;
+$border:none none double none;
+$f-size: 20px;
+$brand-font:cursive;
+$b-size:25px;
+$mb:5%;
+$f-border:double none none none;  
+$f-height: 90px;
+$text:center;
+$margin: 2%;
+$display: flex;
+$fw: wrap;
+$m-row: 0 -16px;
+$col-flex: 50%;
+$col:0 5px;
+$c-background:#f2f2f2;
+$c-border: 1.5px solid lightgrey;
+$c-b-radius: 5px;
+$c-padding: 5px 19px 14px 19px;
+$w:100%;
+$i-padding: 10px;
+$i-border: 1.5px solid #ccc;
+$i-b-radius: 3px;
+$l-display: block;
+$icon-margin:15px;
+$icon-font: 29px;
+$color: white;
+$green:green;
+$h-green:#4CAF50;
+$r-float: right;
+$grey:grey;
+$hr-border: 2px solid lightgrey;
+$box:border-box;
+$col-25:25%;
+$col-75:75%;
+$direction: column-reverse;
+header{ 
+    font-family: $h-font;    
+    border-style: $border;
+    font-size: $f-size;
+}
+.navbar-brand{
+    font-family:$brand-font;
+    font-size: $b-size;
+}
+nav{ 
+    li :hover {
+    background-color:$background;
+    }
+}
+main{
+   margin-bottom: $mb; 
+    margin-left: $margin;
+}
+* {
+  box-sizing: $box;
+}
+.row {
+  display: $display;
+  flex-wrap:$fw;
+  margin: $m-row;
+}
+.col-50 {
+  flex: $col-flex;
+}
+.col-25 {
+  flex: $col-25;
+}
+.col-50 {
+  flex: $col-flex;
+}
+.col-75 {
+  flex: $col-75;
+}
+.col-25,
+.col-50,
+.col-75 {
+  padding: $col;
+}
+.container {
+  background-color: $c-background;
+  border: $c-border;
+  border-radius: $c-b-radius;
+    padding: $c-padding;
+}
+input[type=text] {
+  width: $w;
+  margin-bottom: $f-size;
+  padding: $i-padding;
+  border: $i-border;
+  border-radius: $i-b-radius;
+}
+label {
+  margin-bottom: $i-padding;
+  display: $l-display;
+}
+.icon-container {
+  margin-bottom: $icon-margin;
+  font-size: $icon-font;
+}
+#btncheckout {
+  background-color: $green;
+  color: $color;
+  padding: $i-padding;
+  width: $w;
+  border-radius: $c-b-radius;
+}
+#btncheckout:hover {
+  background-color: $h-green;
+}
+hr {
+  border: $hr-border;
+}
+span{
+    .price {
+  float: $r-float;
+  color: $grey;
+    }
+}
+footer{
+    text-align: $text; 
+    height: $f-height;
+   border-style: $f-border;      
+}
+@media (max-width: 720px) {
+  .row {
+    flex-direction: $direction;
+  }
+  .col-25 {
+    margin-bottom: $f-size;
+  }
+}

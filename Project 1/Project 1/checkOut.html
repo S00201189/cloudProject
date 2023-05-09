@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="checkout, Payment, Shiping Address">
+    <meta name="Aurthor" content="Bashar ALHatmi">
+    <title>checkout</title>
+    <link rel="stylesheet" href="bootstap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a href="Home.html"><img src="images/logo.jpg" alt="logo" width="70" height="70"></a>
+            <a class="navbar-brand" href="aboutUs.html">Re:Zero</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarShop" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="shop.html">Cloths</a>
+          <a class="dropdown-item" href="#">Shoses</a>
+          <a class="dropdown-item" href="#">Accessories</a>
+        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary" id="logout" href="#">
+                        Login </button>
+                    <button type="button" class="btn btn-primary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-reference="parent"><i class="fa fa-user"></i>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuReference">
+                        <a class="dropdown-item" href="update.html">User Details</a>
+                    </div>
+                </div>
+
+
+
+                <div class="btn-toolbar">
+                    <a class="nav-item nav-link" href="checkout.html">
+                        <button type="button" class="btn btn-secondary ml-2">Checkout <i class="fa fa-shopping-cart"></i>
+                            <span class="badge badge-light" id="checkout"></span>
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <h1>Processing To Checkout </h1>
+        <div class="row">
+            <div class="col-75">
+                <div class="container">
+                    <form id="orderForm">
+
+                        <div class="row">
+                            <div class="form-group col-md-11">
+                                <legend>Shiping Address</legend>
+                                <label for="FirstName"><i class="fa fa-user"></i> First name</label>
+                                <input type="text" class="form-control" id="FirstName" name="firstname" placeholder="Bashar" attern="[a-zA-Z]$" required>
+                                <label for="LastName"><i class="fa fa-user"></i> Last name</label>
+                                <input type="text" class="form-control" id="LastName" name="lastname" placeholder="AlHatmi" attern="[a-zA-Z]$" required>
+                                <label for="address1"><i class="fa fa-address-card-o"></i> Address</label>
+                                <input type="text" id="address1" class="form-control" name="address" placeholder="Enter your Address" required>
+                                <label for="getcity"><i class="fa fa-institution"></i> City</label>
+                                <input type="text" class="form-control" id="getcity" name="city" placeholder="Sligo" attern="[a-zA-Z]$" required>
+
+                                <div class="row">
+                                    <div class="col-50">
+
+                                        <label for="getEircode ">Eircode </label>
+                                        <input type="text" class="form-control" id="getEircode" name="Eircode" placeholder="Enter your Eircode e.g. F65 FZ22 " required>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="state">State</label>
+                                        <input type="text" class="form-control" id="state" name="State" placeholder="Ireland" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <legend>Payment Details</legend>
+                            <div class="form-group col-md-11">
+                                <label for="fname">Accepted Cards</label>
+                                <div class="icon-container">
+                                    <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                    <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                    <i class="fa fa-cc-paypal" style="color:skyblue;"></i>
+                                </div>
+                                <label for="cname">Name on Card</label>
+                                <input type="text" id="cname" name="cardname" placeholder="Bashar ALHatmi" attern="[a-zA-Z]$">
+                                <label for="ccnum">Credit card number</label>
+                                <input type="text" id="ccnum" name="cardnumber" placeholder="1234-1234-1234-1234">
+
+                                <div class="row">
+                                    <div class="col-50">
+                                        <label for="expyear">Expirty Date </label>
+                                        <input type="text" id="expyear" name="expyear" pattern=[0-9]{2}-[0-9]{2}$ placeholder="11-23" required>
+                                    </div>
+                                    <div class="col-50">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvvnumber" pattern="[0-9]{3}$" placeholder="987" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <label>
+                            <input type="checkbox" checked="checked" name="sameadr"> Comfirm
+                        </label>
+                        <div class="alert alert-success d-none" id="payment-success" role="alert">
+                            Thank you for your purchase. You will receive delivery details via email. Please return to our <a href="shop.html">Shopping Page</a>.
+                        </div>
+                        <div class="alert alert-danger d-none" id="payment-failure" role="alert">
+                            There seems to be a problem with the card details you entered.
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit Order</button>
+
+                    </form>
+                </div>
+            </div>
+
+           <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>2</b></span></h4>
+      <p><a href="shop.html">White hoodie</a> <span class="price">€20</span></p>
+      <p><a href="shop.html">Geltleman Shoe</a> <span class="price">€50</span></p>
+      <hr>
+      <p>Total Price<span class="price" style="color:black"><b>€70</b></span></p>
+    </div>
+  </div>
+        </div>
+
+
+    </main>
+    <footer>
+        <p>Copyright Re:Zero © 2020</p>
+
+        <div class="template-demo">
+            <button type="button" class="btn btn-social-icon btn-facebook btn-rounded"><i class="fa fa-facebook"></i></button>
+            <button type="button" class="btn btn-social-icon btn-youtube btn-rounded"><i class="fa fa-youtube"></i></button>
+            <button type="button" class="btn btn-social-icon btn-twitter btn-rounded"><i class="fa fa-twitter"></i></button>
+            <button type="button" class="btn btn-social-icon btn-instagram btn-rounded"><i class="fa fa-instagram"></i></button> </div>
+
+    </footer>
+    <script src="bootstap/js/jquery-3.4.1.min.js"></script>
+    <script src="bootstap/js/bootstrap.bundle.min.js"></script>
+    <script src="order.js"></script>
+
+</body>
+
+</html>

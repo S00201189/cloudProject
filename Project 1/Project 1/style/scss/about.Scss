@@ -1,0 +1,90 @@
+$background:#ffe6e6;
+$bg-size:cover;
+$h-font:serif;
+$border:none none double none;
+$f-size: 20px;
+$brand-font:cursive;
+$b-size:25px;
+$h-color:#ff6666;
+$mb:5%;
+$mt:55px;
+$text:center;
+$w:100%;
+$f-border:double none none none;  
+$f-height: 90px;
+$sw:30%;
+$s-color: white;
+$b-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+$p:10px 20px;
+$display:inline-block;
+$b:1px solid #ff6666;
+$f-background:rgba(255,255,255,0.5);
+$t-border: 1px solid black;
+$v-height: 400px;
+$v-width: 70%;
+$m-bottom:2%;
+$s-display:inherit;
+$div-w: 80%;
+body{  
+    background-size: $bg-size;
+    background-color: $background;
+}
+header{ 
+    font-family: $h-font;    
+    border-style: $border;
+    font-size: $f-size;
+}
+.navbar-brand{
+    font-family:$brand-font;
+    font-size: $b-size;
+}
+nav {
+    li :hover {
+    background-color:$background;
+    }
+}
+main{
+   margin-bottom: $mb;
+   text-align: $text;
+}
+h1,h2,h3{
+     color:$h-color;
+}
+
+.div{
+    margin-top:$mt;
+    margin-left:$mb;
+    margin-right:$mb;
+}
+section {
+    display:$display;
+    img{ width: $w;}
+    img:hover{ border: $b;} 
+    footer{ background-color: $f-background;}
+    .polaroid {
+  width: $sw;
+  background-color: $s-color;
+  box-shadow: $b-shadow; }
+    .container{ padding:$p;}  
+}
+footer{
+    text-align: $text; 
+    height: $f-height;
+   border-style: $f-border;      
+}
+video{
+    margin-top: $mb;
+    border: $t-border;
+    height: $v-height;
+    width: $v-width;
+}
+@media only screen and (max-width: 720px) {
+ .div {
+     section{
+      display:$s-display;
+      width: $div-w;
+     margin-left: $mt;
+     margin-bottom: $m-bottom; 
+     }
+  }
+}
